@@ -1,0 +1,31 @@
+block VARIABLES
+
+include ../globals/variables
+
+include ../globals/mixins
+
+doctype html
+
+html
+  head
+    title #{pageTitle}
+
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(content="IE=edge,chrome=1,chrome=1", "http-equiv"="X-UA-Compatible")
+    meta(charset="utf-8")
+
+    include shared/css-href
+
+    block PRE_BODY
+
+
+  body
+    include ../partials/header
+
+    block BODY
+
+    include ../partials/footer
+
+    include shared/js-src
+
+    block POST_BODY
